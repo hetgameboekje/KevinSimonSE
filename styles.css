@@ -1,14 +1,24 @@
+
+
+
+body {
+  background-color: #f2f5de;
+}
+
+
 .dropbtn {
-    background-color: #04AA6D;
+    background-color: #93ff96;
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    border-radius:8px;
+
   }
   
   .dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
+    background-color: #86e7b8;
   }
   
   #myInput {
