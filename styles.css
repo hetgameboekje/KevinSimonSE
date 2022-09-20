@@ -23,7 +23,7 @@ body {
   
   #myInput {
     box-sizing: border-box;
-    background-image: url('searchicon.png');
+    background-image: url('ico/search.png');
     background-position: 14px 12px;
     background-repeat: no-repeat;
     font-size: 16px;
@@ -59,3 +59,39 @@ body {
   .dropdown a:hover {background-color: #ddd;}
   
   .show {display: block;}
+
+  /* The grid: Three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 300px;
+  padding: 50px;
+  margin:3px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  border-radius:20px;
+  border: 4px solid #86e7b8
+}
+
+.containerTab {
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  border-radius:8px;
+  border: 4px solid #86e7b8
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  float: right;
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+  cursor: pointer;
+}
