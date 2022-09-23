@@ -1,26 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-  <!--https://coolors.co/86e7b8-93ff96-b2ffa8-d0ffb7-f2f5de-->
+<html lang='en'>
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>De Simon's</title>
+  <meta charset='utf-8' />
+  <title>Kevin locaties</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/x-icon" href="ico/phishing.png">
-</head>
-<body>
-<div class="dropdown">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 600px;
+      height: 600px;
+    }
+  </style>
+  <div class="dropdown">
     <script src="script.js"></script>
     <button onclick="myFunction()" class="dropbtn"><img src="ico/menu.png" width="32px;" alt=""></button>
-  <div id="myDropdown" class="dropdown-content">
-    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-    <a href="./index.html"><img src="ico/home.png" width="32px;" alt="">Home</a>
-    <a href="./location.html"><img src="ico/location.png" width="32px;" alt="">Locations</a>
-    <a href="./contact.html"><img src="ico/contacts-book.png" width="32px;" alt="">Contacts</a>
+    <div id="myDropdown" class="dropdown-content">
+      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+      <a href="./index.html"><img src="ico/home.png" height="32px;" alt="">Home</a>
+      <a href="./location.html"><img src="ico/location.png" height="32px;" alt="">Locations</a>
+      <a href="./contact.html"><img src="ico/contacts-book.png" height="32px;" alt="">Contacts</a>
+    </div>
+  </div>
+</head>
+
+<body>
+  <div id='map'></div>
+  <script>
+    // The value for 'accessToken' begins with 'pk...'
+    mapboxgl.accessToken = 'pk.eyJ1IjoiaGV0Z2FtZWJvZWtqZSIsImEiOiJjbDhkMHRmODcwNXcxM3Zuemw1ZHA2Y2IyIn0.pBJ9D4F7ptT49ev-7Ay-Lw';
+    const map = new mapboxgl.Map({
+      container: 'map',
+      // Replace YOUR_STYLE_URL with your style URL.
+      style: 'mapbox://styles/hetgameboekje/cl8d1rlaz000c15p2xjy3cdsz',
+      center: [5.87346, 50.99245],
+      zoom: 10.7
+    });
+
+  </script>
+
+  <div class="sil">
+    <hr class="rounded">
+
+    <img src="img/arendstraat.png" class="images" alt="">
+    <hr class="rounded">
+
+    <img src="img/Maastrichtschool.png" class="images" alt="">
+    <hr class="rounded">
+
+
+    <img src="img/jumperdier.png" class="images" alt="">
+    <hr class="rounded">
+
+    <img src="img/arendstraat.png" class="images" alt="">
+    <hr class="rounded">
+
 
   </div>
 
-</div>
+</body>
 
 </html>
