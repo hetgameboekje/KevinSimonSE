@@ -3,6 +3,8 @@
 
 body {
   background-color: #f2f5de;
+  font-family: Arial, Helvetica, sans-serif;
+
 }
 
 
@@ -18,16 +20,20 @@ body {
   cursor: pointer;
   color: rgb(0, 0, 0);
   border-radius:20px;
-  border: 4px solid #86e7b8
+  border: 4px solid #86e7b8;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
 }
-
+.column:hover {
+  border: 6px solid #69b691;
+}
 .containerTab {
   padding: 20px;
   color: rgb(0, 0, 0);
   border-radius:8px;
-  border: 4px solid #86e7b8
-}
+  border: 4px solid #86e7b8;
 
+}
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -172,12 +178,24 @@ body {
 
 .show {display: block;} 
 hr.rounded {
-  border-top: 8px solid #4CAF50;
+  border-top: 8px solid #68a36a;
   border-radius: 5px;
 }
+tr:hover {background-color: #5ed19a;}
 
+th {
+  background-color: #50af81;
+  color: rgb(75, 72, 72);
+  text-align: left;
+
+}
+tr {
+  color: rgb(75, 72, 72);
+  text-align: left;
+
+}
 .box12 {
-  background-color: rgb(66, 133, 140);
+  background-color: #42858c;
   width: 32px;
   height: 32px;
   position: relative;
